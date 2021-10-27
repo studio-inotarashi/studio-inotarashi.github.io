@@ -1,4 +1,6 @@
-.presentation_text
+
+
+.presentation
 {
       /*
       width: calc(50% - 6vw);
@@ -16,11 +18,11 @@
       top: 50px; left: -50%; bottom: 0; right: 0;
       width: calc(50% - 6vw);
       height: calc(80% - 6vw);
-      padding-left: 2vw;
+      padding: 2vw 2vw;
 
 }
 
-.new_upload
+.right
 {
       /*
       background-color: white;
@@ -44,5 +46,5 @@
       height: calc(80% - 6vw);
       width: calc(50% - 6vw);
       height: calc(80% - 6vw);
-      padding-left: 2vw;
+      padding: 2vw 2vw;
 }
