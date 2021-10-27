@@ -66,3 +66,10 @@ body
 {
       background-color: #F4FFC8;
 }
+
+.presentation
+{
+      width: 50%;
+      height: auto;
+      overflow: auto;
+}
