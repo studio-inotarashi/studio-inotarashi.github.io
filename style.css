@@ -3,7 +3,9 @@
       height: 50px;
       margin: 0;
       z-index: 99;
-      position: relative;
+      position: fixed;
+      top: 0;
+      left: 0;
       background-color: #444444;
       }
       .navbar{
@@ -14,7 +16,7 @@
       }
       .navbar li{
       height: auto;
-      width: calc(25vw - 4px); /*25vw = 1 quart de la page (fois 4  car 4 onglets) 4px = on soustrait les border de 1 px */
+      width: 25vw; /*135.8px -- 476px -- 24.7vw -- calc(25vw-1px)*/
       float: left;
       text-align: center;
       list-style: none;
@@ -24,7 +26,7 @@
       background-color: #444444;
       }
       .navbar a{
-      padding: 18px 0;
+      padding: 18px 0; /*18px 0*/
       border-left: 1px solid #ccc9c9;
       text-decoration: none;
       color: white;
@@ -55,5 +57,12 @@
       .navbar li ul li a:hover{
       background-color: #a3a1a1;
       }
+header
+{
 
-      .navbar
+}
+
+body
+{
+      background-color: #F4FFC8;
+}
