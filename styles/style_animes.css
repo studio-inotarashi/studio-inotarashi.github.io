@@ -1,0 +1,48 @@
+.presentation_text
+{
+      /*
+      width: calc(50% - 6vw);
+      height: auto;
+      overflow: auto;
+      padding-top: 50px;
+      padding-left: 2vw;
+      background-color: white;
+      position: absolute;
+      top: 50px; left: 0; bottom: 0; right: 0;
+      */
+      background-color: white;
+      margin: auto;
+      position: absolute;
+      top: 50px; left: -50%; bottom: 0; right: 0;
+      width: calc(50% - 6vw);
+      height: calc(80% - 6vw);
+      padding-left: 2vw;
+
+}
+
+.new_upload
+{
+      /*
+      background-color: white;
+      float: right;
+      width: calc(50% - 6vw);
+      height: auto;
+      overflow: auto;
+      padding-top: 50px;
+      padding-right: 2vw;
+      background-color: white;
+      position: absolute;
+      top: 15vw;
+      right: 2vw;
+      */
+
+      background-color: white;
+      margin: auto;
+      position: absolute;
+      top: 50px; left: 0; bottom: 0; right: -50%;
+      width: calc(50% - 6vw);
+      height: calc(80% - 6vw);
+      width: calc(50% - 6vw);
+      height: calc(80% - 6vw);
+      padding-left: 2vw;
+}
