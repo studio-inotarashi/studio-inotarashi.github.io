@@ -65,12 +65,3 @@ body
 {
       background-color: #FFFFFF;
 }
-
-.presentation
-{
-      width: calc(50% - 2vw);
-      height: auto;
-      overflow: auto;
-      padding-top: 50px;
-      margin-left: 2vw;
-}
