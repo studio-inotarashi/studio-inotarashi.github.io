@@ -14,7 +14,7 @@
       }
       .navbar li{
       height: auto;
-      width: 24.78vw; /*135.8px -- 476px*/
+      width: calc(25vw - 4px); /*25vw = 1 quart de la page (fois 4  car 4 onglets) 4px = on soustrait les border de 1 px */
       float: left;
       text-align: center;
       list-style: none;
