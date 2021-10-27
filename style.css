@@ -73,4 +73,7 @@ body
       width: 50%;
       height: auto;
       overflow: auto;
+      padding-top: 50px;
+      margin-left: 2vw;
+}
 }
