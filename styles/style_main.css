@@ -56,6 +56,15 @@
       .navbar li ul li a:hover{
       background-color: #a3a1a1;
       }
+
+
+a
+{
+      text-decoration: underline;
+      color: green;
+}
+
+
 header
 {
 
