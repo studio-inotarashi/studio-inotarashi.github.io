@@ -16,7 +16,7 @@ function CreationCookie(nom,valeur,permanent)
 {
     if(permanent)
     {
-        dateExp = new Date(2020,11,11);
+        dateExp = new Date(2021,10,28);
         dateExp = dateExp.toGMTString();
             ifpermanent = '; expires=' + dateExp + ';';
     }
