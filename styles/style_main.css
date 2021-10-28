@@ -113,11 +113,6 @@ a
 
 }
 
-p
-{
-  font-size: 1em;
-
-}
 
 h1
 {
@@ -163,6 +158,12 @@ ul li
 {
     font-size: 1.3em;
 }
+figcaption
+{
+      display: block;
+      font-size: 1.3em;
+}
+
 header
 {
 
