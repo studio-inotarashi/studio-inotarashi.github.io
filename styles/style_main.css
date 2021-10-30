@@ -1,6 +1,6 @@
 #wrap{
       width: 100%;
-      height: 50px;
+      height: auto;
       margin: 0;
       z-index: 99;
       position: fixed;
@@ -9,18 +9,18 @@
       background-color: #444444;
       }
       .navbar{
-      height: 50px;
+      height: auto;
       padding: 0;
       margin: 0;
       position: absolute;
       }
       .navbar li{
       height: auto;
-      width: calc(25vw - 5px) ; /*135.8px -- 476px -- 24.7vw -- calc(25vw-5px)*/
+      width: 25vw ; /*135.8px -- 476px -- 24.7vw -- calc(25vw-5px)*/
       float: left;
       text-align: center;
       list-style: none;
-      font: normal bold 13px/1em Arial, Verdana, Helvetica;
+      font: normal bold 13px/3em Arial, Verdana, Helvetica;
       padding: 0;
       margin: 0;
       background-color: #444444;
@@ -69,7 +69,7 @@ a
   h1
   {
       display: block;
-      font-size: 1.5em;
+      font-size: 1.2em;
       margin-block-start: 0.67em;
       margin-block-end: 0.67em;
       margin-inline-start: 0px;
@@ -80,7 +80,7 @@ a
   h2
   {
       display: block;
-      font-size: 1.3em;
+      font-size: 1em;
       margin-block-start: 0.83em;
       margin-block-end: 0.83em;
       margin-inline-start: 0px;
@@ -90,7 +90,7 @@ a
   h3
   {
       display: block;
-      font-size: 1em;
+      font-size: 0.75em;
       margin-block-start: 1em;
       margin-block-end: 1em;
       margin-inline-start: 0px;
@@ -110,11 +110,65 @@ a
     margin-inline-end: 0px;
     font-size: 0.5em;
   }
-  .navbar li
-  {
-    width: calc(25vw - 5px) ;
-  }
 
+  #wrap{
+      width: 100%;
+      height: auto;
+      margin: 0;
+      z-index: 99;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #444444;
+      }
+      .navbar{
+      height: auto;
+      padding: 0;
+      margin: 0;
+      position: absolute;
+      }
+      .navbar li{
+      height: auto;
+      width: 25vw ; /*135.8px -- 476px -- 24.7vw -- calc(25vw-5px)*/
+      float: left;
+      text-align: center;
+      list-style: none;
+      font: normal bold 13px/2em Arial, Verdana, Helvetica;
+      padding: 0;
+      margin: 0;
+      background-color: #444444;
+      }
+      .navbar a{
+      padding: 18px 0; /*18px 0*/
+      border-left: 1px solid #ccc9c9;
+      text-decoration: none;
+      color: white;
+      display: block;
+      }
+      .navbar li:hover, .navbar a:hover {
+      background-color: #000000;
+      }
+      .navbar li ul{
+      display: none;
+      height: auto;
+      margin: 0;
+      padding: 0;
+      }
+      .navbar li:hover ul{
+      display: block;
+      }
+      .navbar li ul li {
+      background-color: #444444;
+      }
+      .navbar li ul li a{
+      border-left: 1px solid #444444;
+      border-right: 1px solid #444444;
+      border-top: 1px solid #c9d4d8;
+      border-bottom: 1px solid #444444;
+      }
+      .navbar li ul li a:hover{
+      background-color: #a3a1a1;
+      }
 }
 
 
@@ -162,6 +216,12 @@ ul li
 {
     font-size: 1.3em;
 }
+
+.texte ul
+{
+  padding-inline-start: 1em;
+}
+
 figcaption
 {
       display: block;
@@ -175,5 +235,5 @@ header
 
 body /*Parametres arrière plan gris + taille (test)*/
 {
-      background-color: black;
+      background-color: lightskyblue;
 }
