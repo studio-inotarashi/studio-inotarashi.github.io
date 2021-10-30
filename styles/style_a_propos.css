@@ -1,3 +1,15 @@
+.navbar li
+{
+   width: calc(25vw - 5px );
+}
+
+
+
+
+
+
+
+
 .zone_de_texte
 {
       /*
@@ -10,7 +22,7 @@
       position: absolute;
       top: 50px; left: 0; bottom: 0; right: 0;
       */
-      background-color: darkgray;
+      background-color: #f3f3f3;
       margin: 90px auto 90px auto; /*haut droit bas gauche*/
       position: relative;
       top: 50px; left: 0%; bottom: 10%; right: 0;
