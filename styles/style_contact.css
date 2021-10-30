@@ -1,3 +1,10 @@
+.navbar li
+{
+   width: calc(25vw - 5px );
+}
+
+
+
 .page
 {
       /*
@@ -21,30 +28,30 @@
       text-align: center;
 }
 
-.zone_de_texte
+.réseaux
 {
       display: flex;
       justify-content: space-between;
       padding-top: 80px;
+      width: 100%;
 }
 
-.insta, .discord , .ytbe
+  .insta, .discord , .ytbe
 {
       display: block;
       width: auto;
-      height: 100px;
+      height: 10em;
       margin-left: auto;
       margin-right: auto;
       padding-bottom: 4px;
 }
-
 
 .instagram:hover
 {
       content: url('../medias/instagram_color.png');
       display: block;
       width: auto;
-      height: 100px;
+      height: 10em;
       margin-left: auto;
       margin-right: auto;
       padding-bottom: 4px;
@@ -55,7 +62,7 @@
       content: url('../medias/discord_color.png');
       display: block;
       width: auto;
-      height: 100px;
+      height: 10em;
       margin-left: auto;
       margin-right: auto;
       padding-bottom: 4px;
@@ -66,7 +73,7 @@
       content: url("../medias/youtube_color.png");
       display: block;
       width: auto;
-      height: 100px;
+      height: 10em;
       margin-left: auto;
       margin-right: auto;
       padding-bottom: 4px;
@@ -78,14 +85,7 @@
   box-sizing: border-box;
 }
 
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid rgb(70, 68, 68);
-  border-radius: 4px;
-  resize: vertical;
-}
-input[type=email], select, textarea {
+input[type=email],input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid rgb(70, 68, 68);
@@ -107,6 +107,7 @@ input[type=submit] {
   border-radius: 4px;
   cursor: pointer;
   float: right;
+  margin: 10px 10px;
 }
 
 input[type=submit]:hover {
@@ -120,14 +121,13 @@ input[type=submit]:hover {
 }
 
 .col-25 {
-  float: left;
-  width: 25%;
-  margin-top: 6px;
+  width: 100%;
+  text-align: center;
 }
 
 .col-75 {
   float: left;
-  width: 75%;
+  width: 100%;
   margin-top: 6px;
 }
 
@@ -136,4 +136,57 @@ input[type=submit]:hover {
   content: "";
   display: table;
   clear: both;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 800px)
+{
+  .insta, .discord , .ytbe
+{
+      display: block;
+      width: auto;
+      height: 1em;
+      margin-left: auto;
+      margin-right: auto;
+      padding-bottom: 4px;
+}
+
+
+.instagram:hover
+{
+      content: url('../medias/instagram_color.png');
+      display: block;
+      width: auto;
+      height: 1em;
+      margin-left: auto;
+      margin-right: auto;
+      padding-bottom: 4px;
+}
+
+.discord_lien:hover
+{
+      content: url('../medias/discord_color.png');
+      display: block;
+      width: auto;
+      height: 1em;
+      margin-left: auto;
+      margin-right: auto;
+      padding-bottom: 4px;
+}
+
+.youtube:hover
+{
+      content: url("../medias/youtube_color.png");
+      display: block;
+      width: auto;
+      height: 1em;
+      margin-left: auto;
+      margin-right: auto;
+      padding-bottom: 4px;
+}
 }
