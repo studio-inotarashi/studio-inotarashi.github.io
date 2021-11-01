@@ -8,7 +8,7 @@
 <body>
 <h1>Mask Detection - Teachable Machine</h1>
 <p>Please Allow the webcam using and then, you will see if the person in front of the webcam has or not a face mask.<br><br></p>
-<div class="video" style="display: block; margin-left: auto; margin-right: auto;">
+<div class="video"">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
   <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
@@ -30,11 +30,11 @@
     }
 
     function setup() {
-      createCanvas(480, 360);
+      createCanvas(320, 260);
       canvas.setAttribute('style', "border:5px solid blue");
       // Create the video
       video = createCapture(VIDEO);
-      video.size(480, 340);
+      video.size(320, 240);
       video.hide();
 
       flippedVideo = ml5.flipImage(video);
