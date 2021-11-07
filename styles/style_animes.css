@@ -5,7 +5,7 @@
 
 footer
 {
-      bottom: 0;
+      bottom: -70px;
 }
 .left
 {
@@ -24,7 +24,7 @@ footer
       position: absolute;
       top: 50px; left: -50%; bottom: 0; right: 0;
       width: calc(50% - 6vw);
-      height: calc(80% - 6vw);
+      height: calc(85% - 6vw);
       padding: 2vw 2vw;
 
 }
@@ -56,7 +56,7 @@ footer
       position: absolute;
       top: 50px; left: 0; bottom: 0; right: -50%;
       width: calc(50% - 6vw);
-      height: calc(80% - 6vw);
+      height: calc(85% - 6vw);
       padding: 2vw 2vw;
 }
 
