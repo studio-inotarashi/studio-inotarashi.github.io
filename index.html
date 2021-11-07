@@ -74,7 +74,32 @@
 </footer>
 
 <script>
-alert("Le site internet est en développement.\nIl actuellement optimisé pour une utilisation sur des appareils type ordinateurs.\nIl se pourrait donc que la navigation depuis un appareil mobile altère votre expérience\n\nCordialement\nLe web designer.");
+
+function getDeviceType()
+{
+  const ua = navigator.userAgent;
+  if (/(tablet|ipad|playbook|silk)|(android(?!.*mobi))/i.test(ua)) {
+    return "tablet";
+  }
+  if (/Mobile|iP(hone|od)|Android|BlackBerry|IEMobile|Kindle|Silk-Accelerated|(hpw|web)OS|Opera M(obi|ini)/.test(ua))
+  {
+    return "mobile";
+  }
+  else
+  {
+    return "desktop";
+  }
+};
+
+var device = getDeviceType();
+console.log(device);
+
+if (device == "mobile")
+  {
+    alert("Le site internet est en développement.\nIl actuellement optimisé pour une utilisation sur des appareils type ordinateurs.\nLa poursuite de votre navigation sur ce type d'appareils risque d'altérer votre expérience.\n\nCordialement\nLe web designer.");
+    console.log("alert send")
+  }
+
 </script>
 
   </body>
