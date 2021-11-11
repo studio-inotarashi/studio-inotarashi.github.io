@@ -229,10 +229,6 @@ figcaption
       font-size: 1.3em;
 }
 
-header
-{
-
-}
 
 body /*Parametres arrière plan gris + taille (test)*/
 {
@@ -267,10 +263,6 @@ footer
       background-color: #606060;
 }
 
-.texte_footer p
-{
-      font-size: ;
-}
 
 footer span
 {
