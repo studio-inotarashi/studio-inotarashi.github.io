@@ -55,8 +55,15 @@ footer
 
 .texte ul li
 {
-      line-height: 30px;
+    line-height: 30px;
 }
+.texte ul li ul a {
+    text-decoration: none;
+}
+.texte ul li ul a:hover{
+  text-decoration: underline;;
+}
+
 ul li
 {
     font-size: 1.3em;
@@ -120,6 +127,22 @@ h1 {
     font-weight: bold;
     text-align: center;
 }
+
+
+.button {
+    background-color: #1c87c9;
+    border: none;
+    color: white;
+    padding: 0px 20px;
+    text-align: center;
+    text-decoration: none;
+    /* display: inline-block; */
+    font-size: 15px;
+    margin: 20px auto;
+    cursor: pointer;
+    float: right;
+}
+
 
 /*
       top: calc(50% - 37px - 4vw);
