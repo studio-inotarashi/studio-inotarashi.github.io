@@ -58,35 +58,66 @@
     <div class="texte">
       <h1>Nos Dessins</h1>
         <h2>Liste des dessins :</h2>
-        <ul>
-          <a href="dessins/all/planche_1.png" target="lecteur">
-            <li>Planche 1</li>
-          </a>
+          <div class="container">
+            <ul>
+              <li>
+                <h3>Plaches Manga</h3>
+                <ul>
+                  <a href="dessins/all/planche_1.png" target="lecteur" onclick="link(this.getAttribute('href'));">
+                    <li>Planche 1</li>
+                  </a>
 
-          <a href="dessins/all/planche_2.png" target="lecteur">
-            <li>Planche 2</li>
-          </a>
+                  <a href="dessins/all/planche_2.png" target="lecteur" onclick="link(this.getAttribute('href'));">
+                    <li>Planche 2</li>
+                  </a>
 
-          <a href="dessins/all/planche_3.png" target="lecteur">
-            <li>Planche 3</li>
-          </a>
-        </ul>
+                  <a href="dessins/all/planche_3.png" target="lecteur" onclick="link(this.getAttribute('href'));">
+                    <li>Planche 3</li>
+                  </a>
+                </ul>
+              </li>
+              <li>
+                <h3>Dessins Anatomiques</h3>
+                <ul>
+                  <a href="dessins/all/anatomie_1.jpg" target="lecteur" onclick="link(this.getAttribute('href'));">
+                    <li>Anatomie 1</li>
+                  </a>
+                  <a href="dessins/all/anatomie_2.png" target="lecteur" onclick="link(this.getAttribute('href'));">
+                    <li>Anatomie 2</li>
+                  </a>
+                  <a href="dessins/all/anatomie_3.png" target="lecteur" onclick="link(this.getAttribute('href'));">
+                    <li>Anatomie 3</li>
+                  </a>
+                </ul>
+              </li>
+              <a href="" id="img_open" target="_blank" title="Ouvrir l'image dans un nouvel onglet"> <h3>Agrandir l'image</h3> </a>
+          </ul>
+        </div>
     </div>
   </div>
 
+
+<script type="text/javascript">
+
+function link(lien) {
+  var a = document.querySelector("#img_open");
+  console.log(a);
+  a.setAttribute("href", lien );
+  console.log(a.getAttribute("href"))
+}
+
+</script>
+
   <div class="right">
     <h1>Lecteur d'images</h1>
-
     <p align="center">
-      <iframe class="lecteur" name="lecteur" src="" frameborder="0" allowfullscreen></iframe>
-
+      <iframe id="iframe" class="lecteur" name="lecteur" src="" frameborder="0" allowfullscreen onload="iframelink()"></iframe>
     </p>
-
-  </div>
+*  </div>
 
   <footer>
     <div class="texte_footer">
-      <h5>Studio Inotarashï</h5>
+      <h3>Studio Inotarashï</h3>
       <p>&copy 2021 - All rights reserved</p>
       <small><a href="../a_propos_de_nous.html">About Us</a> <span>|</span> <a href="../nous_contacter.html">Contact Us</a> <span>|</span> <a href="https://www.youtube.com/channel/UCK2jKab8xf8hXk1VLD25X4w">Youtube</a> <span>|</span> <a href="../mentions_legales.html">Mentions légales</a> </small>
     </div>
