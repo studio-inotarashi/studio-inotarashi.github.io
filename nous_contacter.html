@@ -90,7 +90,7 @@ all rights reserved
 
 <h2>Formulaire de commentaire</h2>
   <div class="feedback">
-    <textarea id="subject" name="subject" placeholder="Entrez votre message.." style="height:200px"></textarea>
+    <textarea id="subject" name="subject" placeholder="Entrez votre message.." style="height:200px; font-size: 15pt"></textarea>
     <button onclick="sendmsg()" class="cooldown">Envoyer</button>
   </div>
 </div>
@@ -110,13 +110,18 @@ all rights reserved
 function sendmsg()
   {
     console.log("function 2 executing")
+
+    const webhook_name = "Studio Inotarashï Website"
+    const webhook_link = "https://discord.com/api/webhooks/950504337946316891/bGVTEN1NAxwHMGtif8P5CNGUJ1bCV7RIJ0lh54zDc7zaUbKGeTc061GR_vxaCa1hRVUF";
     const request = new XMLHttpRequest();
-      request.open("POST", "https://discord.com/api/webhooks/905110151483252788/e2FKzOTUInv982UMcc6LsDbN0bZM-6CHYrj0a3c6QocyX2nD38vS-udikv3vDN4a6lTV");
-      request.setRequestHeader('Content-type', 'application/json');
-      console.log("request done")
+    request.open("POST", webhook_link);
+    request.setRequestHeader('Content-type', 'application/json');
+    console.log("request done")
     const params =
       {
   "content": null,
+  "username": `${webhook_name}`,
+  "avatar_url": "https://studio-inotarashi.github.io/favicon-32x32.png",
   "embeds":
   [
     {
@@ -132,7 +137,18 @@ function sendmsg()
     }
     request.send(JSON.stringify(params));
     console.log("function executed")
+    document.querySelector("textarea").value = "";
+    transferComplete ();
 }
+
+function transferComplete () {
+      alert("Votre message a bien été envoyé !");
+}
+
+function transferFailed () {
+  alert(`Une erreur est survenue\nVotre message n'a pas pu être envoyé.\nSi l'erreur persiste, veuillez nous contacter.\n\nERROR : WEBHOOK REQUEST RESPONDED WITH STATUS ${request.status}`);
+}
+
 
 </script>
 
