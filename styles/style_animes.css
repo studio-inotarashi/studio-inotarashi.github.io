@@ -123,7 +123,12 @@ footer
       float: right;
   }
 
-
+.button:hover {
+      outline: 3px solid #d417c4;
+      outline-offset: 0px;
+      /* background-color: #1579b8; */
+      background: radial-gradient(circle, #1579b8 0%, #aa16c6 100%);
+}
 
 /*
       top: calc(50% - 37px - 4vw);
