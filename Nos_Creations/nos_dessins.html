@@ -98,15 +98,15 @@ all rights reserved
                   <a href="dessins/all/anatomie_1.jpg" target="lecteur" onclick="link(this.getAttribute('href'));">
                     <li>Anatomie 1</li>
                   </a>
-                  <a href="dessins/all/anatomie_2.png" target="lecteur" onclick="link(this.getAttribute('href'));">
+                  <a href="dessins/all/anatomie_2.jpg" target="lecteur" onclick="link(this.getAttribute('href'));">
                     <li>Anatomie 2</li>
                   </a>
-                  <a href="dessins/all/anatomie_3.png" target="lecteur" onclick="link(this.getAttribute('href'));">
+                  <a href="dessins/all/anatomie_3.jpg" target="lecteur" onclick="link(this.getAttribute('href'));">
                     <li>Anatomie 3</li>
                   </a>
                 </ul>
               </li>
-              <a href="" id="img_open" class="button" target="_blank" title="Ouvrir l'image dans un nouvel onglet"> <h3>Agrandir l'image</h3> </a>
+              <a href="" id="img_open" class="button" target="_blank" title="Ouvrir l'image dans un nouvel onglet"> <h3>Open in new tab</h3> </a>
           </ul>
         </div>
     </div>
@@ -117,10 +117,9 @@ all rights reserved
 
 function link(lien) {
   var a = document.querySelector("#img_open");
-  console.log(a);
   a.setAttribute("href", lien );
-  console.log(a.getAttribute("href"))
 }
+
 
 </script>
 
