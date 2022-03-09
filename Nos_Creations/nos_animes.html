@@ -80,20 +80,20 @@ all rights reserved
       <div class="container">
       <ul>
         <li>
-          <a href="https://www.youtube.com/embed/o7UrHfJlp7E" target="lecteur" title="Cliquez-ici pour lancer la lecture de la vidéo">
+          <a href="https://www.youtube.com/embed/o7UrHfJlp7E" target="lecteur" title="Cliquez-ici pour lancer la lecture de la vidéo" onclick="link_yout(this.getAttribute('href'));">
             <h3>Our Life</h3>
           </a>
         </li>
         <li>
           <h3>The 9 Gems</h3>
             <ul>
-                <a href="https://www.youtube.com/embed/ERmUW3ro578" target="lecteur" title="Cliquez-ici pour lancer la lecture de la vidéo">
+                <a href="https://www.youtube.com/embed/ERmUW3ro578" target="lecteur" title="Cliquez-ici pour lancer la lecture de la vidéo" onclick="link_yout(this.getAttribute('href'));">
                 <li>Saison 1 - Episode 1</li>
                 </a>
-              <a href="https://www.youtube.com/embed/2baYJpcvv4s" target="lecteur" title="Cliquez-ici pour lancer la lecture de la vidéo">
+              <a href="https://www.youtube.com/embed/2baYJpcvv4s" target="lecteur" title="Cliquez-ici pour lancer la lecture de la vidéo" onclick="link_yout(this.getAttribute('href'));">
                 <li>Saison 1 - Episode 2</li>
               </a>
-              <a href="https://www.youtube.com/embed/ZKvxPjYGz-s" target="lecteur" title="Cliquez-ici pour lancer la lecture de la vidéo">
+              <a href="https://www.youtube.com/embed/ZKvxPjYGz-s" target="lecteur" title="Cliquez-ici pour lancer la lecture de la vidéo" onclick="link_yout(this.getAttribute('href'));">
                 <li>Saison 1 - Episode 3</li>
               </a>
             </ul>
@@ -101,33 +101,53 @@ all rights reserved
         <li>
           <h3>Making of :</h3>
           <ul>
-            <a href="dessins/making_of/making_of_1.mp4" target="lecteur" title="Cliquez-ici pour lancer la lecture de la vidéo">
+            <a href="dessins/making_of/making_of_1.mp4" target="lecteur" title="Cliquez-ici pour lancer la lecture de la vidéo" onclick="link(this.getAttribute('href'));">
                 <li>Making of 1</li>
             </a>
-            <a href="dessins/making_of/making_of_2.mp4" target="lecteur" title="Cliquez-ici pour lancer la lecture de la vidéo">
+            <a href="dessins/making_of/making_of_2.mp4" target="lecteur" title="Cliquez-ici pour lancer la lecture de la vidéo" onclick="link(this.getAttribute('href'));">
                 <li>Making of 2</li>
             </a>
-            <a href="dessins/making_of/making_of_3.mp4" target="lecteur" title="Cliquez-ici pour lancer la lecture de la vidéo">
+            <a href="dessins/making_of/making_of_3.mp4" target="lecteur" title="Cliquez-ici pour lancer la lecture de la vidéo" onclick="link(this.getAttribute('href'));">
                 <li>Making of 3</li>
             </a>
-            <a href="dessins/making_of/making_of_4.mp4" target="lecteur" title="Cliquez-ici pour lancer la lecture de la vidéo">
+            <a href="dessins/making_of/making_of_4.mp4" target="lecteur" title="Cliquez-ici pour lancer la lecture de la vidéo" onclick="link(this.getAttribute('href'));">
                 <li>Making of 4</li>
             </a>
-            <a href="dessins/making_of/making_of_5.mp4" target="lecteur" title="Cliquez-ici pour lancer la lecture de la vidéo">
+            <a href="dessins/making_of/making_of_5.mp4" target="lecteur" title="Cliquez-ici pour lancer la lecture de la vidéo" onclick="link(this.getAttribute('href'));">
                 <li>Making of 5</li>
             </a>
-            <a href="dessins/making_of/making_of_6.mp4" target="lecteur" title="Cliquez-ici pour lancer la lecture de la vidéo">
+            <a href="dessins/making_of/making_of_6.mp4" target="lecteur" title="Cliquez-ici pour lancer la lecture de la vidéo" onclick="link(this.getAttribute('href'));">
                 <li>Making of 6</li>
             </a>
-            <a href="dessins/making_of/making_of_7.mp4" target="lecteur" title="Cliquez-ici pour lancer la lecture de la vidéo">
+            <a href="dessins/making_of/making_of_7.mp4" target="lecteur" title="Cliquez-ici pour lancer la lecture de la vidéo" onclick="link(this.getAttribute('href'));">
                 <li>Making of 7</li>
             </a>
           </ul>
         </li>
+        <a href="" id="img_open" class="button" target="_blank" title="Ouvrir l'image dans un nouvel onglet"> <h3>Open in new tab</h3> </a>
       </ul>
     </div>
     </div>
   </div>
+
+<script type="text/javascript">
+
+  function link(lien) {
+    var a = document.querySelector("#img_open");
+    a.setAttribute("href", lien );
+  }
+  
+  function link_yout(lien) {
+    var a = document.querySelector("#img_open");
+    var youtube = "https://www.youtube.com/watch?v=";
+    const ref = lien.split('/');
+    const vid_id = ref[4];
+    youtube += vid_id;
+    a.setAttribute("href", youtube );
+  }
+  
+  
+</script>
 
   <div class="right">
 
