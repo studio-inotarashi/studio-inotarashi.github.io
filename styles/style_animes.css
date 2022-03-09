@@ -109,6 +109,22 @@ footer
   margin: 0 auto;
 }
 
+.button {
+      background-color: #1c87c9;
+      border: none;
+      color: white;
+      padding: 0px 20px;
+      text-align: center;
+      text-decoration: none;
+      /* display: inline-block; */
+      font-size: 15px;
+      margin: 20px auto;
+      cursor: pointer;
+      float: right;
+  }
+
+
+
 /*
       top: calc(50% - 37px - 4vw);
       left: calc(25% + 4vw);
