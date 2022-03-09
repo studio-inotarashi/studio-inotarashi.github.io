@@ -30,11 +30,11 @@
     }
 
     function setup() {
-      createCanvas(320, 260);
+      createCanvas(1280, 720);
       canvas.setAttribute('style', "border:5px solid blue");
       // Create the video
       video = createCapture(VIDEO);
-      video.size(320, 240);
+      video.size(1280, 720);
       video.hide();
 
       flippedVideo = ml5.flipImage(video);
