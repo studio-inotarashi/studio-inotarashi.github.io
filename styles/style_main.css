@@ -49,7 +49,7 @@
       }
       .navbar li{
       height: auto;
-      width: 25vw ; /*135.8px -- 476px -- 24.7vw -- calc(25vw-5px)*/
+      width: calc(25vw - 10px); /*135.8px -- 476px -- 24.7vw -- calc(25vw-5px)*/
       float: left;
       text-align: center;
       list-style: none;
