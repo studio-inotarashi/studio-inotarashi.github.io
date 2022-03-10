@@ -29,15 +29,8 @@
   --body-secondary :#a1b1e2 ; /*#6f7fb5*/
 }
 
-/* Hide scrollbar for Chrome, Safari and Opera */
-.example::-webkit-scrollbar {
-  display: none;
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */
-.example {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+::-webkit-scrollbar {
+    display: none;
 }
 
 #wrap{
@@ -58,7 +51,7 @@
       }
       .navbar li{
       height: auto;
-      width: calc(25vw - 10px); /*135.8px -- 476px -- 24.7vw -- calc(25vw-5px)*/
+      width: 25vw; /*135.8px -- 476px -- 24.7vw -- calc(25vw-5px)*/
       float: left;
       text-align: center;
       list-style: none;
