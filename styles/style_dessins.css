@@ -25,7 +25,7 @@ ul ul {
 
 .navbar li
 {
-   width: calc(25vw - 8px );
+   width: 25vw;
 }
 footer
 {
